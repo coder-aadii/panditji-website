@@ -1,0 +1,434 @@
+/* Global Reset: Resets margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Container Class: Adds margin to the left and right sides for the content */
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Navbar Section: Styles the navigation bar, makes it fixed at the top */
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Logo Section: Positions the logo inside the navbar */
+.nav div.logo {
+    width: 180px;
+    height: auto;
+    margin-top: 2%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Logo Image: Ensures the logo image fills its container */
+.nav div.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Logo Link: Styles the text link for the logo */
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+/* Hover Effect for Logo Link: Changes color when hovered */
+.nav div.logo a:hover {
+    color: #c0c0c0;
+}
+
+/* Navbar List Section: Defines the container for the navigation menu */
+.nav div.main_list {
+    width: 750px;
+    height: 65px;
+    float: right;
+}
+
+/* Navbar List: Styles the unordered list that holds menu items */
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+
+/* Navbar List Item: Defines the size and layout of each list item */
+.nav div.main_list ul li {
+    height: 65px;
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    flex-grow: 1;  /* Each item grows equally */
+    justify-content: center;  /* Centers the content inside each item */
+}
+
+/* Navbar Link Styling: Sets default styles for each navigation link */
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 65px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Pop-up Hover Effect: Scales the text size when hovering over a link */
+.nav div.main_list ul li a:hover {
+    color: #8B0000;
+    text-decoration: none;
+    transform: scale(1.25);
+    transform-origin: center;
+    text-shadow: 2px 1px 5px rgba(218, 220, 167, 0.914);
+}
+
+/* Media Button Section: Styles for media buttons like social media icons */
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+/* Navbar Scroll Effect: Changes navbar background when scrolling */
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+}
+
+/* Media Button - Main Button: Styles for the button in the media section */
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Button - Icon: Styles for the lines that make up the media button */
+.nav div.media_button button.main_media_button span {
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+/* Hero Section: Styling the hero container */
+.hero {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('/assets/images/background.jpeg'); /* Set background image */
+    background-size: cover; /* Cover the entire section with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center the content vertically */
+    filter: brightness(70%); /* Darken the background for better text visibility */
+    position: relative;
+    padding-left: 5%; /* Adds padding to shift content slightly to the left */
+}
+
+/* Hero Content (Text and Button) */
+.hero div {
+    text-align: center; /* Center align the content */
+    color: white; /* White text color */
+    z-index: 10; /* Ensure content appears above the background */
+    max-width: 700px; /* Limit content width */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Hero Heading (Main Title) */
+.hero h1 {
+    font-size: 3.5em; /* Large text size for the heading */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+    text-transform: uppercase; /* Make the heading uppercase */
+    letter-spacing: 2px; /* Slightly increase letter spacing */
+    font-weight: 700; /* Make the text bold */
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.2em; /* Medium-sized text */
+    margin-bottom: 30px; /* Space between paragraph and button */
+    font-weight: 400; /* Normal weight for the paragraph */
+}
+
+/* Enquire Button Styling */
+.hero .enquire-btn {
+    padding: 15px 30px; /* Space inside the button */
+    font-size: 1.2em; /* Slightly larger text inside button */
+    background-color: #ff6f61; /* Orange-red background */
+    color: white; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase; /* Uppercase button text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover Effect for Enquire Button */
+.hero .enquire-btn:hover {
+    background-color: #e55548; /* Darker shade of orange-red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Home Section: Background image for the home section */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/home-background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+}
+
+/* Services Section: Background image for the services section */
+#services {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/services-background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+}
+
+/* About Us Section: Background image for the about us section */
+#about {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/about-background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+}
+
+/* Gallery Section: Background image for the gallery section */
+#gallery {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/gallery-background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+}
+
+/* Testimonials Section: Background image for the testimonials section */
+#testimonials {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/testimonials-background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+}
+
+/* Contact Section: Background image for the contact section */
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/contact-background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    position: relative; /* Positioning for footer content */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text, .footer-links, .footer-contact {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li:hover{
+    color: #f39c12;
+    transform: scale(1.1);
+}
+.footer-contact ul li:hover{
+    color: #f39c12;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer-design {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.footer-design p {
+    font-style: italic;
+    color: #fff; /* White text color */
+}
+
+.footer-design a {
+    color: #fff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+.footer-design a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Media Query for Tablets (768px - 1024px): Adjusts layout for medium screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+    .hero h1 {
+        font-size: 2.5em; /* Slightly smaller text size for tablet */
+    }
+
+    .hero p {
+        font-size: 1.1em; /* Slightly smaller text for paragraph */
+    }
+
+    .hero .enquire-btn {
+        font-size: 1.1em; /* Adjust button font size */
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 768px): Adjusts layout for small screens */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+
+    /* Logo section on smaller screens */
+    .nav div.logo {
+        margin-left: 15px;
+    }
+
+    /* Navbar List on smaller screens: Takes up full width and is stacked vertically */
+    .nav div.main_list {
+        width: 100%;
+        margin-top: 65px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    /* Show List on mobile: Expands to show items */
+    .nav div.show_list {
+        height: 200px;
+    }
+
+    /* Navbar List Items on smaller screens: Stacks them vertically */
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+
+    /* Navbar List Item on smaller screens */
+    .nav div.main_list ul li {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(0, 0, 255, 0.8);
+    }
+
+    /* Navbar Link on smaller screens */
+    .nav div.main_list ul li a {
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+
+    /* Media button on mobile: Displays the media button */
+    .nav div.media_button {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Smaller text size for mobile */
+    }
+
+    .hero p {
+        font-size: 1em; /* Smaller paragraph text */
+    }
+
+    .hero .enquire-btn {
+        font-size: 1em; /* Adjust button text size */
+        padding: 12px 25px; /* Smaller padding for mobile devices */
+    }
+}
