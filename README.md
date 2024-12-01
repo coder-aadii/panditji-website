@@ -57,16 +57,16 @@ This website is built using the following technologies:
 Here are some snapshots of the **PanditJi** website:
 
 ### Homepage
-![Homepage](assets/images/homepage.jpg)
+![Homepage](assets/images/snapshots/homepage.png)
 
 ### Services Section
-![Services](assets/images/services.jpg)
+![Services](assets/images/snapshots/servicepage.png)
 
 ### Gallery Section
-![Gallery](assets/images/gallery.jpg)
+![Gallery](assets/images/snapshots/gallerypage.png)
 
 ### Contact Us Section
-![Contact Us](assets/images/contact.jpg)
+![Contact Us](assets/images/snapshots/contactpage.png)
 
 ### Testimonials Section
 ![Testimonials](assets/images/testimonials.jpg)
