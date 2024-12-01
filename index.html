@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -23,20 +26,20 @@
                 <div class="logo">
                     <a href="index.html">
                         <img src="assets/images/logo.png" alt="PanditJi logo">
-                    </a>                    
+                    </a>
                 </div>
                 <div class="main_list" id="mainListDiv">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <!-- <li><a href="#">About Us</a></li> -->
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="media_button">
-                    <button class="main_media_button" id="mediaButton">
+                    <button class="main_media_button" id="mediaButton" >
                         <span></span>
                         <span></span>
                         <span></span>
@@ -61,115 +64,158 @@
         <h2>Welcome to Pandit Ji!</h2>
 
         <div class="home-content">
-            <!-- Circular image of the Pandit Ji -->
-            <img src="assets/images/profile-pandit.jpg" alt="Pandit Ji" class="pandit-image">
-
-            <!-- Refined Description Text -->
-            <p> आजकल की तेज़ रफ्तार ज़िंदगी में पूजा और धार्मिक कार्यों के लिए एक स्थानीय पंडित को खोजना चुनौतीपूर्ण हो सकता है। क्या आप <strong>गृह प्रवेश, विवाह, नामकरण या मृत्यु संस्कार </strong>करवाना चाहते हैं? क्या आपको <strong>वास्तु दोष निवारण या ज्योतिषीय परामर्श</strong> की आवश्यकता है? यदि हाँ, तो हमारे अनुभवी पंडित जी आपके लिए सर्वोत्तम समाधान हैं। वे शुद्ध आध्यात्मिक ज्ञान, सटीक ज्योतिषीय भविष्यवाणी, और प्रभावी वास्तु उपाय प्रदान करेंगे। शांति और समृद्धि के लिए मंत्र-जाप के माध्यम से, वे आपकी मनोकामनाओं को पूरा करने में मदद करेंगे। बस हमें <strong>एक कॉल करें</strong> और हम आपकी विशिष्ट आवश्यकताओं और बजट के अनुरूप हमारी सेवाएँ तैयार करेंगे। हम यह सुनिश्चित करते हैं कि हर यजमान को उनकी आवश्यकताओं के अनुरूप उच्च गुणवत्ता वाले, व्यक्तिगत अनुष्ठान प्राप्त हों। </p>
+            <div class="pandit-image">
+                <!-- Circular image of the Pandit Ji -->
+                <img src="assets/images/profile-pandit.jpg" alt="Pandit Ji" class="pandit-image">
+            </div>
+            <div class="pandit-description">
+                <!-- Refined Description Text -->
+                <p> आजकल की तेज़ रफ्तार ज़िंदगी में पूजा और धार्मिक कार्यों के लिए एक स्थानीय पंडित को खोजना चुनौतीपूर्ण
+                    हो
+                    सकता है। क्या आप <strong>गृह प्रवेश, विवाह, नामकरण या मृत्यु संस्कार </strong>करवाना चाहते हैं? क्या
+                    आपको <strong>वास्तु दोष निवारण या ज्योतिषीय परामर्श</strong> की आवश्यकता है? यदि हाँ, तो हमारे
+                    अनुभवी
+                    पंडित जी आपके लिए सर्वोत्तम समाधान हैं। वे शुद्ध आध्यात्मिक ज्ञान, सटीक ज्योतिषीय भविष्यवाणी, और
+                    प्रभावी
+                    वास्तु उपाय प्रदान करेंगे। शांति और समृद्धि के लिए मंत्र-जाप के माध्यम से, वे आपकी मनोकामनाओं को
+                    पूरा
+                    करने में मदद करेंगे। बस हमें <strong>एक कॉल करें</strong> और हम आपकी विशिष्ट आवश्यकताओं और बजट के
+                    अनुरूप
+                    हमारी सेवाएँ तैयार करेंगे। हम यह सुनिश्चित करते हैं कि हर यजमान को उनकी आवश्यकताओं के अनुरूप उच्च
+                    गुणवत्ता वाले, व्यक्तिगत अनुष्ठान प्राप्त हों। </p>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
-        <h2>हमारी सेवाएँ</h2>
-        <div class="services-grid">
-            <div class="service-tile">
-                <h3>जन्म</h3>
-                <ul>
-                    <li>नामकरण संस्कार</li>
-                    <li>मुंडन संस्कार</li>
-                </ul>
-            </div>
+    <div class="services-wrapper">
+        <section id="services">
+            <h2>हमारी सेवाएँ</h2>
+            <div class="services-grid">
+                <div class="service-tile">
+                    <h3>जन्म</h3>
+                    <ul>
+                        <li>नामकरण संस्कार</li>
+                        <li>मुंडन संस्कार</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>विवाह</h3>
-                <ul>
-                    <li>सगाई समारोह</li>
-                    <li>विवाह समारोह</li>
-                    <li>विवाह के बाद के रीति-रिवाज (गृह प्रवेश, आदि)</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>विवाह</h3>
+                    <ul>
+                        <li>सगाई समारोह</li>
+                        <li>विवाह समारोह</li>
+                        <li>विवाह के बाद के रीति-रिवाज (गृह प्रवेश, आदि)</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>मृत्यु</h3>
-                <ul>
-                    <li>अंतिम संस्कार</li>
-                    <li>अंतिम संस्कार के बाद के रीति-रिवाज (पिंड दान, आदि)</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>मृत्यु</h3>
+                    <ul>
+                        <li>अंतिम संस्कार</li>
+                        <li>अंतिम संस्कार के बाद के रीति-रिवाज (पिंड दान, आदि)</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>धार्मिक समारोह</h3>
-                <ul>
-                    <li>पूजा और आरती</li>
-                    <li>दैनिक प्रार्थना</li>
-                    <li>गणेश, लक्ष्मी, शिव आदि देवताओं के लिए विशेष पूजा</li>
-                    <li>दिवाली, होली, नवरात्रि आदि जैसे त्योहार</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>धार्मिक समारोह</h3>
+                    <ul>
+                        <li>पूजा और आरती</li>
+                        <li>दैनिक प्रार्थना</li>
+                        <li>गणेश, लक्ष्मी, शिव आदि देवताओं के लिए विशेष पूजा</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>यज्ञ</h3>
-                <ul>
-                    <li>विशिष्ट उद्देश्यों (जैसे समृद्धि, स्वास्थ्य, शांति) के लिए अग्नि यज्ञ</li>
-                    <li>नवग्रह शांति यज्ञ</li>
-                    <li>गृह शांति यज्ञ</li>
-                    <li>रुद्राभिषेक यज्ञ</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>यज्ञ</h3>
+                    <ul>
+                        <li>विशिष्ट उद्देश्यों (जैसे समृद्धि, स्वास्थ्य, शांति) के लिए अग्नि यज्ञ</li>
+                        <li>नवग्रह शांति यज्ञ</li>
+                        <li>गृह शांति यज्ञ</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>ज्योतिषीय परामर्श</h3>
-                <ul>
-                    <li>जन्म कुंडली विश्लेषण</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>ज्योतिषीय परामर्श</h3>
+                    <ul>
+                        <li>जन्म कुंडली विश्लेषण</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>भविष्यवाणी</h3>
-                <ul>
-                    <li>भविष्य की घटनाओं के लिए भविष्यवाणी</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>भविष्यवाणी</h3>
+                    <ul>
+                        <li>भविष्य की घटनाओं के लिए भविष्यवाणी</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>उपाय</h3>
-                <ul>
-                    <li>ग्रहों के असंतुलन के उपाय</li>
-                    <li>व्यापार में उन्नति के लिए उपाय</li>
-                    <li>गृह एवं वास्तु दोष निवारण</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>उपाय</h3>
+                    <ul>
+                        <li>ग्रहों के असंतुलन के उपाय</li>
+                        <li>व्यापार में उन्नति के लिए उपाय</li>
+                        <li>गृह एवं वास्तु दोष निवारण</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>मंत्र-जप और आध्यात्मिक मार्गदर्शन</h3>
-                <ul>
-                    <li>विभिन्न उद्देश्यों के लिए पवित्र मंत्रों का उच्चारण</li>
-                    <li>धार्मिक प्रथाओं और दर्शन पर सलाह देना</li>
-                </ul>
-            </div>
+                <div class="service-tile">
+                    <h3>मंत्र-जप और आध्यात्मिक मार्गदर्शन</h3>
+                    <ul>
+                        <li>विभिन्न उद्देश्यों के लिए पवित्र मंत्रों का उच्चारण</li>
+                        <li>धार्मिक प्रथाओं और दर्शन पर सलाह देना</li>
+                    </ul>
+                </div>
 
-            <div class="service-tile">
-                <h3>मंदिर अनुष्ठान</h3>
-                <ul>
-                    <li>मंदिरों में दैनिक अनुष्ठान करना</li>
-                </ul>
+                <div class="service-tile">
+                    <h3>मंदिर अनुष्ठान</h3>
+                    <ul>
+                        <li>मंदिरों में दैनिक अनुष्ठान करना</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- About Us Section -->
-    <section id="about">
+    <!-- <section id="about">
         <h2>About Us</h2>
         <p>Navgraha Pandit is dedicated to providing high-quality spiritual services, guided by experienced and
             professional pandits.</p>
-    </section>
+    </section> -->
 
     <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Explore our gallery of various rituals and spiritual events.</p>
-    </section>
+    <div class="gallery-wrapper">
+        <section id="gallery">
+            <h2>गैलरी</h2>
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/astrology.jpg" alt="Anushthan 1">
+                    <p>भविष्य वाणी</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/shadi.jpg" alt="Anushthan 2">
+                    <p>विवाह समारोह</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/namkaran.png" alt="Anushthan 3">
+                    <p>नामकरण संस्कार</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/garud-puran.jpg" alt="Anushthan 4">
+                    <p>अंतिम संस्कार</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/yagya.jpg" alt="Anushthan 5">
+                    <p>यज्ञ अनुष्ठान</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/ganesh-pooja.jpg" alt="Anushthan 6">
+                    <p>गणेश पूजन</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
@@ -180,7 +226,30 @@
     <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions or want to schedule a service, feel free to contact us.</p>
+        <p>यदि आपके पास कोई प्रश्न हैं या आप कोई सेवा निर्धारित करना चाहते हैं, तो कृपया हमसे संपर्क करें।</p>
+
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="assets/images/contact-us.png" alt="Contact Us Image">
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -196,11 +265,11 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#">About Us</a></li> -->
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
 

@@ -9,3 +9,10 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('scrolled');
     }
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+});

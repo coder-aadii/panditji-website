@@ -194,6 +194,7 @@
 #home {
     text-align: center;
     padding: 40px;
+    font-family: "Teko", sans-serif;
 }
 
 #home h2 {
@@ -229,13 +230,39 @@
 }
 
 /* Service styling section */
+
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
 #services {
     padding: 20px;
     text-align: center;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    width: 80%;
 }
 
 #services h2 {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#services li {
+    font-family: "Teko", sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    /* Use regular weight */
+    font-style: normal;
+    /* Normal font style */
 }
 
 .services-grid {
@@ -245,11 +272,18 @@
 }
 
 .service-tile {
-    background-color: #f9f9f9;
+    background-color: #f6e8e8;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-tile:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .service-tile h3 {
@@ -277,16 +311,77 @@
     filter: brightness(70%);
 }
 
-/* Gallery Section: Background image for the gallery section */
+/* Gallery Section Style */
 #gallery {
-    width: 100%;
-    height: 100vh;
-    background-image: url('/assets/images/gallery-background.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    filter: brightness(70%);
+    text-align: center;
+    margin: 50px 0;
+    /* Adds space above and below the gallery */
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
 }
+
+.gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    height: auto;
+    /* Adjust height based on content */
+    width: 100%;
+    /* Make sure it takes the full width of the parent */
+    margin: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* This sets 3 columns */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    /* Make gallery grid take full width */
+    max-width: 1200px;
+    /* Limit the max width of the gallery */
+}
+
+#gallery h2 {
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    /* Make sure items take full width within the grid */
+    max-width: 400px;
+    /* Limit the width of individual items */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
 
 /* Testimonials Section: Background image for the testimonials section */
 #testimonials {
@@ -299,15 +394,69 @@
     filter: brightness(70%);
 }
 
-/* Contact Section: Background image for the contact section */
 #contact {
-    width: 100%;
-    height: 100vh;
-    background-image: url('/assets/images/contact-background.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    filter: brightness(70%);
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #8B0000;
+    /* Border color */
+    border-radius: 2%;
+    /* Rounded corners */
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contact-image img {
+    width: 60%;
+    height: auto;
+    border-radius: 2%;
+    /* Optional to match container */
+}
+
+.contact-form {
+    width: 90%;
+    margin-right: 5%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-right: 90%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #A52A2A;
+    /* Darker red on hover */
 }
 
 a {
@@ -315,25 +464,51 @@ a {
     color: inherit;
 }
 
+/* Footer Section */
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    position: relative;
+    /* Dark background */
+    color: white;
+    /* Text color */
+    padding: 40px 0;
+    text-align: center;
+    font-family: "Teko", sans-serif;
 }
 
+/* Footer Container - Organize content */
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555;
+    /* Subtle divider */
 }
 
-.footer-text,
-.footer-links,
-.footer-contact {
-    flex: 1;
-    margin: 10px;
+/* Footer Text Section */
+.footer-text {
+    max-width: 30%;
+}
+
+.footer-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Quick Links Section */
+.footer-links {
+    max-width: 30%;
+}
+
+.footer-links h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .footer-links ul {
@@ -341,13 +516,41 @@ footer {
     padding: 0;
 }
 
-.footer-links ul li {
-    margin: 5px 0;
+.footer-links li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.footer-links ul li a {
-    color: #ffffff;
+.footer-links li:hover {
+    color: yellow;
+    /* Change to yellow on hover */
+    transform: scale(1.2);
+    /* Popup effect */
+    cursor: pointer;
+}
+
+.footer-links a {
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: yellow;
+    /* Change to yellow on hover */
+    transform: scale(1.2);
+    /* Popup effect */
+    cursor: pointer;
+}
+
+/* Contact Info Section */
+.footer-contact {
+    max-width: 30%;
+}
+
+.footer-contact h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .footer-contact ul {
@@ -355,16 +558,169 @@ footer {
     padding: 0;
 }
 
-.footer-contact ul li {
-    margin: 5px 0;
+.footer-contact li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transition for hover and popup effect */
 }
 
-.footer-links ul li:hover {
-    color: #f39c12;
-    transform: scale(1.1);
+.footer-contact li:hover {
+    color: yellow;
+    /* Change to yellow on hover */
+    transform: scale(1.2);
+    /* Popup effect */
+    cursor: pointer;
 }
 
-.footer-contact ul li a {
-    color: #ffffff;
+/* Footer Design Credit */
+.footer-design {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-design a {
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-design a:hover {
+    color: yellow;
+    /* Change to yellow on hover */
+    transform: scale(1.05);
+    /* Popup effect */
+}
+
+/* Hover effect on Designed by text */
+.footer-design p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Adjust the container margins for small screens */
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* Navbar: Stack items and reduce padding */
+    .nav {
+        height: 60px;
+        position: relative;
+    }
+
+    /* Adjust logo size */
+    .nav div.logo {
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    /* Hamburger icon for mobile menu */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 2em;
+        color: #333;
+    }
+
+    /* Hide the main menu by default on mobile */
+    .nav div.main_list {
+        display: none;
+    }
+
+    /* Show menu when open */
+    .nav.open div.main_list {
+        display: block;
+    }
+
+    /* Reduce font size for navigation links */
+    .nav div.main_list ul li a {
+        font-size: 1em;
+    }
+
+    /* Hero section: Adjust font size and padding */
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    /* Enquire Button: Adjust size */
+    .hero .enquire-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    /* Home section: Adjust image and text size */
+    #home .container {
+        display: flex;
+        flex-direction: column;
+        /* Stack the image and paragraph */
+        align-items: center;
+        /* Center the content horizontally */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .home-content{
+        margin-bottom: 2%;
+    }
+
+    #home .pandit-image {
+        display: none;
+    }
+
+    #home .pandit-description {
+        width: 100%;
+        /* Full width on mobile */
+    }
+
+    /* Services: Adjust grid layout to single column */
+    .services-wrapper{
+        margin-top: 2%;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-tile {
+        padding: 15px;
+    }
+
+    /* Gallery: Stack images vertically */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact: Stack form and image vertically */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-image img {
+        width: 100%;
+    }
+
+    /* Footer: Center text and reduce padding */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
 }
