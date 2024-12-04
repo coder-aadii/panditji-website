@@ -31,11 +31,12 @@
                 <div class="main_list" id="mainListDiv">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <!-- <li><a href="#">About Us</a></li> -->
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <ul>
+                            <li><a href="#services" onclick="scrollToServices()">Services</a></li>
+                            <li><a href="#gallery" onclick="scrollToGallery()">Gallery</a></li>
+                            <li><a href="#testimonials" onclick="scrollToTestimonials()">Testimonials</a></li>
+                            <li><a href="#contact" onclick="scrollToContact()">Contact Us</a></li>
+                        </ul>                        
                     </ul>
                 </div>
                 <div class="media_button">
@@ -54,7 +55,7 @@
         <div>
             <h1>आपके सभी धार्मिक अनुष्ठानों को संपन्न कराने के लिए हम यहाँ उपलब्ध हैं</h1>
             <p>हमसे जुड़ें और प्राप्त करें आपके उद्देश्य के अनुसार आध्यात्मिक अनुष्ठान</p>
-            <button class="enquire-btn">Enquire Now</button>
+            <button class="enquire-btn" onclick="scrollToContact()">Enquire Now</button>
         </div>
     </section>
 
